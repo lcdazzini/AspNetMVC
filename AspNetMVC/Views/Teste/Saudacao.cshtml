@@ -1,0 +1,12 @@
+﻿@using AspNetMVC.Models
+@model Pessoa
+@{
+    ViewBag.Title = "Saudacao";
+}
+
+<h2>Saudacao</h2>
+
+<p>Olá seja bem vindo @Model.Nome</p>
+@Html.LabelFor(p => p.Idade) @Html.TextBoxFor(p => p.Idade)
+@Html.LabelFor(p => p.Endereco) @Html.TextBoxFor(p => p.Endereco)
+@Html.LabelFor(p => p.Email) @Html.TextBoxFor(p => p.Email)
